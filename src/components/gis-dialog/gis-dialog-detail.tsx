@@ -55,8 +55,7 @@ function Description(props: { type: TCoordinateItem['level'] }) {
     return (
       <p className='text-sm text-balance text-gray-600'>
         Area ini memiliki resiko banjir yang tinggi, harap waspada untuk memperhatikan kondisi
-        cuaca. Selalu siapkan persediaan seperti sepatu boots, jas hujan, dan barang penting yand
-        sedang dibawa.
+        cuaca. Selalu siapkan persediaan seperti sepatu boots, jas hujan, dan payung.
       </p>
     )
   }
