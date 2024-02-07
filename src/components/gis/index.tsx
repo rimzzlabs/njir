@@ -29,12 +29,7 @@ export function Gis() {
   return (
     <section className='py-4'>
       <div className='rounded-md overflow-hidden'>
-        <MapContainer
-          zoom={13}
-          center={centerMap}
-          scrollWheelZoom={false}
-          className='w-full h-96 md:h-[30rem] '
-        >
+        <MapContainer zoom={13} center={centerMap} className='w-full h-96 md:h-[30rem] '>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
