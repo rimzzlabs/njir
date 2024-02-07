@@ -3,12 +3,21 @@ import { Button } from '@/components/ui/button'
 import { useGis } from '@/hooks/use-gis'
 
 import { Loader2Icon } from 'lucide-react'
+import { toast } from 'sonner'
 
 export function GisRefreshButton() {
   const query = useGis()
 
-  function invalidate() {
-    query.refetch()
+  async function invalidate() {
+    await query.refetch()
+    toast.success('Data berhasil diperbarui', {
+      description: 'Harap dicatat ini hanya mock 🍟',
+      action: {
+        label: 'Tutup',
+        onClick() {},
+      },
+      dismissible: true,
+    })
   }
 
   return (
