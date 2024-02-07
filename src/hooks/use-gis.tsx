@@ -1,4 +1,4 @@
-import { getFloodArea } from '@/lib/utils'
+import { getFloodArea } from '@/lib/api'
 
 import { useQuery } from '@tanstack/react-query'
 
